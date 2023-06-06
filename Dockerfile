@@ -1,9 +1,9 @@
 FROM python:3
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /animesapi
-WORKDIR /animesapi
-COPY requeriments.txt /animesapi/
+RUN mkdir /ApiPersonalAnimes
+WORKDIR /ApiPersonalAnimes
+COPY requeriments.txt /ApiPersonalAnimes/
 RUN pip install -r requeriments.txt
-COPY . /animesapi/
+COPY . /ApiPersonalAnimes/
 CMD python manage.py runserver 0.0.0.0:8080
