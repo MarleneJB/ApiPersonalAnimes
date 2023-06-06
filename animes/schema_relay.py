@@ -10,7 +10,7 @@ from .models import Anime, Vote
 class AnimeFilter(django_filters.FilterSet):
     class Meta:
         model = Anime
-        fields = ['name', 'episodeCount', 'seasonCount', 'status', 'description', 'studio']
+        fields = ['name', 'episode_count', 'season_count', 'status', 'description', 'studio']
 
 
 #2

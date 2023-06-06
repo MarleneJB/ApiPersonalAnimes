@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',  # required
-    'characters', # from characters app
+    'animes', # from characters app
     'users', # from users app
     'corsheaders', # from corsheaders app
 ]
