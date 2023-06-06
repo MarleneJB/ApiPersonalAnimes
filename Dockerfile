@@ -6,4 +6,4 @@ WORKDIR /ApiPersonalAnimes
 COPY requeriments.txt /ApiPersonalAnimes/
 RUN pip install -r requeriments.txt
 COPY . /ApiPersonalAnimes/
-CMD python manage.py runserver 0.0.0.0:8080
+CMD python manage.py runserver 0.0.0.0:5080
