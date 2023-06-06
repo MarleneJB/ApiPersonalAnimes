@@ -1,0 +1,12 @@
+build:
+  marlenejb: # cambiar por su namespace de okteto
+    image: okteto.dev/marlenejb:latest # cambiar por su namespace de okteto
+
+deploy:
+  - okteto build # build the image with the latest code
+  - kubectl apply -f manifests # create all the resources in kubernetes
+dev:
+  marlenejb:
+    command: bash
+    sync:
+      - .:/ApiPersonalAnimes # cambiar por su proyecto
